@@ -1,0 +1,19 @@
+CREATE TABLE PokemonEntity (
+    id INTEGER NOT NULL PRIMARY KEY,
+    name TEXT NOT NULL,
+    imageUrl TEXT NOT NULL,
+    pageOffset INTEGER NOT NULL
+);
+
+selectAllOrderedById:
+SELECT * FROM PokemonEntity ORDER BY id ASC;
+
+selectCount:
+SELECT COUNT(*) FROM PokemonEntity;
+
+insertOrReplace:
+INSERT OR REPLACE INTO PokemonEntity(id, name, imageUrl, pageOffset)
+VALUES (?, ?, ?, ?);
+
+clearAll:
+DELETE FROM PokemonEntity;

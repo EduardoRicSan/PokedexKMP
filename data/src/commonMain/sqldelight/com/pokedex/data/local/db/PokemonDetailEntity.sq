@@ -1,0 +1,18 @@
+CREATE TABLE PokemonDetailEntity (
+    id INTEGER NOT NULL PRIMARY KEY,
+    name TEXT NOT NULL,
+    imageUrl TEXT NOT NULL,
+    types TEXT NOT NULL,
+    abilities TEXT NOT NULL,
+    statsCsv TEXT NOT NULL,
+    heightMeters REAL NOT NULL,
+    weightKg REAL NOT NULL,
+    baseExperience INTEGER NOT NULL
+);
+
+selectById:
+SELECT * FROM PokemonDetailEntity WHERE id = ?;
+
+insertOrReplace:
+INSERT OR REPLACE INTO PokemonDetailEntity(id, name, imageUrl, types, abilities, statsCsv, heightMeters, weightKg, baseExperience)
+VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?);

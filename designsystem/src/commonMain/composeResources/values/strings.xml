@@ -1,0 +1,4 @@
+<resources>
+    <string name="error_retry">Retry</string>
+    <string name="card_view_detail">View detail of %1$s</string>
+</resources>

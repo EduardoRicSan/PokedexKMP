@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Pokédex</string>
+    <string name="pokemon_list_empty">No Pokemon found</string>
+    <string name="detail_title">Detail</string>
+    <string name="detail_image_description">Image of %1$s</string>
+    <string name="section_general_info">General information</string>
+    <string name="label_height">Height</string>
+    <string name="label_weight">Weight</string>
+    <string name="label_base_experience">Base experience</string>
+    <string name="section_abilities">Abilities</string>
+    <string name="section_stats">Stats</string>
+
+    <string name="error_no_connection">No internet connection. Please check your network and try again.</string>
+    <string name="error_timeout">The request took too long. Please try again.</string>
+    <string name="error_not_found">The requested information was not found.</string>
+    <string name="error_server_problem">A server problem occurred (code %1$d). Please try again later.</string>
+    <string name="error_serialization">Could not interpret the server response.</string>
+    <string name="error_local_storage">Could not access data saved on the device.</string>
+    <string name="error_unknown">An unexpected error occurred. Please try again.</string>
+</resources>

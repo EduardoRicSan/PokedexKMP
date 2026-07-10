@@ -1,0 +1,15 @@
+.gradle/
+.idea/
+.kotlin/
+build/
+*/build/
+.DS_Store
+local.properties
+*.iml
+.cxx/
+captures/
+.externalNativeBuild/
+xcuserdata/
+*.xcuserstate
+DerivedData/
+iosApp/Pods/
