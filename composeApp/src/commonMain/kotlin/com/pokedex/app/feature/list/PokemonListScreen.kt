@@ -100,8 +100,11 @@ private fun PokemonGrid(
     // approaches the end of the already rendered list.
     val shouldLoadMore by remember {
         derivedStateOf {
-            val lastVisible = gridState.layoutInfo.visibleItemsInfo.lastOrNull()?.index ?: 0
-            lastVisible >= pokemons.size - 4
+            val totalItemsCount = gridState.layoutInfo.totalItemsCount
+            val lastVisibleItemIndex = gridState.layoutInfo.visibleItemsInfo.lastOrNull()?.index ?: 0
+            
+            // Trigger when there are 4 or fewer items left to scroll
+            totalItemsCount > 0 && lastVisibleItemIndex >= totalItemsCount - 4
         }
     }
     LaunchedEffect(shouldLoadMore) {
