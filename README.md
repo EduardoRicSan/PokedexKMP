@@ -2,11 +2,11 @@
 
 A multiplatform Pokédex (Android / iOS / Desktop) built with **Kotlin Multiplatform (KMP)** and **Compose Multiplatform (CMP)**, consuming the public [PokéAPI](https://pokeapi.co/). Built as a technical assessment to demonstrate Clean Architecture, MVVM, SOLID principles, and dependency injection in a real cross-platform codebase.
 
-| Platform | Status |
+| Platform | Status | Demo
 |---|---|
-| Android | ✅ |
-| iOS | ✅ |
-| Desktop (JVM) | ✅ |
+| Android | ✅ | ![Demo](assets/android.gif) |
+| iOS | ✅ | ![Demo](assets/iOS.gif) |
+| Desktop (JVM) | ✅ | ![Demo](assets/desktop.gif) |
 
 ---
 
